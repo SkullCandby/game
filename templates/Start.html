@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to game</title>
+    <link rel="stylesheet" type="text/css" href="static/base.css">
+</head>
+<body>
+
+<h1> Welcome to my text game, {{ name }}</h1>
+<form action="/" method="post">
+<input type="submit" name="go_edit" value="Edit">
+<br></br>
+<img src="{{ url_for('static', filename='pictures/papn.png') }}" />
+<input type="submit" name="name" value="begining">
+
+</form>
+</body>
+</html>
